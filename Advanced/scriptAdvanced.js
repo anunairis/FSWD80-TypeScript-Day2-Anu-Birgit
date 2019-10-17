@@ -1,5 +1,3 @@
-// Create an App that has to offer four different of types of vehicles and list the vehicle models based on the selected panel. 
-// Once the user clicks on some vehicle show its details and possibility to view the price
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -13,8 +11,6 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-// Create a Parent Class called Vehicles
-// Define properties and methods for the super Class
 var Vehicles = /** @class */ (function () {
     function Vehicles(name, model, constructionYear, fuelType, numberSeats, kilometers) {
         this.name = name;
@@ -31,7 +27,7 @@ var Vehicles = /** @class */ (function () {
     Vehicles.prototype.writeThis = function () {
         //for( let i of Vehicles){
         //console.log(i.name + i.price);
-        var writeThis = "<div class = \"flex\"><p class = \"card-text\">Name:</p><p class = \"ts\">" + this.name + "</p></div>\n\t\t\t\t\t  <div class = \"flex\"><p class = \"card-text\">Model:</p><p class = \"ts\">" + this.model + "</p></div>\n\t\t\t\t\t  <div class = \"flex\"><p class = \"card-text\">Construction Year:</p><p class = \"ts\">" + this.constructionYear + "</p></div>\n\t\t\t\t\t  <div class = \"flex\"><p class = \"card-text\">Fuel Type:</p><p class = \"ts\">" + this.fuelType + "</p></div>\n\t\t\t\t\t  <div class = \"flex\"><p class = \"card-text\">Number of Seats:</p><p class = \"ts\">" + this.numberSeats + "</p></div>\n\t\t\t\t\t  <div class = \"flex\"><p class = \"card-text\">Kilometers:</p><p class = \"ts\">" + this.kilometers + "</p></div>";
+        var writeThis = "\n<div class = \"flex\"><p class = \"card-text\">Name:</p><p class = \"ts\">" + this.name + "</p></div>\n\t\t  <div class = \"flex\"><p class = \"card-text\">Model:</p><p class = \"ts\">" + this.model + "</p></div>\n\t\t  <div class = \"flex\"><p class = \"card-text\">Construction Year:</p><p class = \"ts\">" + this.constructionYear + "</p></div>\n\t\t  <div class = \"flex\"><p class = \"card-text\">Fuel Type:</p><p class = \"ts\">" + this.fuelType + "</p></div>\n\t\t  <div class = \"flex\"><p class = \"card-text\">Number of Seats:</p><p class = \"ts\">" + this.numberSeats + "</p></div>\n\t\t  <div class = \"flex\"><p class = \"card-text\">Kilometers:</p><p class = \"ts\">" + this.kilometers + "</p></div>";
         return writeThis;
     };
     ;
